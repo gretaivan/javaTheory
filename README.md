@@ -1,1 +1,2 @@
-# Java Theory general notes of interest and experimentation with general knowledge 
+# Java Theory
+### general notes of interest and experimentation with general knowledge 

@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import org.apache.commons.lang3.ArraysUtils; 
+import org.apache.commons.lang3.ArrayUtils;
 
 public class MonsterGame {
 	
@@ -16,5 +16,12 @@ public class MonsterGame {
 		monsters[3] = new Monster (1000, 20, 1, "George");
 		
 		Monster.redrawBoard();
+		
+		//make monsters move
+		for (Monster m : monsters) {
+			if (m.getAlive()) {
+				
+			}
+		}
 	}
 }

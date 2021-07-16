@@ -20,8 +20,11 @@ public class MonsterGame {
 		//make monsters move
 		for (Monster m : monsters) {
 			if (m.getAlive()) {
-				
+				int itemIndex  = ArrayUtils.indexOf(monsters, m);
+				m.move(monsters, itemIndex);
 			}
 		}
+		
+		Monster.redrawBoard();
 	}
 }

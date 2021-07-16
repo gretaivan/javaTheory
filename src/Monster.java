@@ -82,4 +82,78 @@ public class Monster {
 		return alive;
 	}
 	
+	public int getMovement() {
+		return movement;
+	}
+
+	public void move(Monster[] monsters, int itemIndex) {
+		//is the space open for move? 
+		boolean isOpen = true; 
+		
+	    int maxXBoardSpace = battleBoard.length - 1;
+	    int maxYBoardSpace = battleBoard[0].length - 1;
+
+		//check that it does not fall of the board and does not move into the occupied place
+		while (isOpen) {
+			//move direction and distance
+			int randMoveDir = (int)(Math.random() * 4);
+			int randomDistance = (int)(Math.random() * (this.getMovement() + 1));
+			
+			System.out.println("Direction: " + randMoveDir + " and distance " + randomDistance);
+			
+			//reset board
+			battleBoard[this.y][this.x] = '*'; 
+			
+			//move north
+			if (randMoveDir == 0) {
+				if ((this.y - randomDistance) < 0  ) {
+					this.y = 0; 
+				} else {
+					this.y = this.y - randomDistance; 
+				}
+			} else if (randMoveDir == 1 ) {
+				if ((this.x - randomDistance) > maxXBoardSpace  ) {
+					this.x = maxXBoardSpace; 
+				} else {
+					this.x = x - randomDistance; 
+				}
+			} else if (randMoveDir == 2 ) {
+				if ((this.y - randomDistance) > maxYBoardSpace  ) {
+					this.y = maxYBoardSpace; 
+				} else {
+					this.y = y - randomDistance; 
+				}
+			} else {
+				if ((this.x - randomDistance) <  0) {
+					this.x = 0; 
+				} else {
+					this.x = x - randomDistance;
+				}
+			}
+			
+			for (int i = 0; i < monsters.length; i++) {
+				if (i == itemIndex) {
+					continue; 
+				}
+				if (spaceTaken(monsters, i, itemIndex)) {
+					isOpen = true; 
+					break; 
+				} else {
+					isOpen = false;
+				}
+			}
+		} // end of while loop
+		
+		battleBoard[this.y][this.x] = this.alias; 
+
+	} // end of move method
+
+	private boolean spaceTaken(Monster[] monsters, int indexToCheck, int itemIndex) {
+		if ((monsters[indexToCheck] == monsters[itemIndex])) {
+			return true; 
+		} else {
+			return false;
+		}
+	}
+	
 }

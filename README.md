@@ -3,6 +3,8 @@ general notes of interest and experimentation with general knowledge
 ## Contents
 + Java Exceptions 
 + Arrays 
++ Lists
++ Abstract and Interface class setup 
 
 <hr>
 
@@ -10,6 +12,6 @@ general notes of interest and experimentation with general knowledge
 
 
 ## TODO
-- [ ] ### Sort algorithms
-- [ ] ### Search algorithms
+- [ ]  Sort algorithms
+- [ ]  Search algorithms
 

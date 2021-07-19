@@ -5,6 +5,7 @@ general notes of interest and experimentation with general knowledge
 + Arrays 
 + Lists
 + Abstract and Interface class setup 
++ Objects and object cloning setup
 
 <hr>
 

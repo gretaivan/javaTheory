@@ -1,9 +1,9 @@
-package theory;
+package theory.Inheritance;
 
-public class MainForInterface {
+public class VehicleMain {
 
 	public static void main(String[] args) {
-		ImplementInterface interfc = new ImplementInterface (4, 100.00);
+		Vehicle interfc = new Vehicle (4, 100.00);
 		System.out.println("Max Speed: " + interfc.getSpeed()); 
 		
 		interfc.setCarStrength(10); 

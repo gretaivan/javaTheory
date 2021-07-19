@@ -1,4 +1,4 @@
-package theory;
+package theory.Inheritance;
 
 public abstract class AbstractCrashable {
 	boolean carDrivable = true; 

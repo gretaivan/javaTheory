@@ -37,7 +37,53 @@ public class GraphicalInterface extends JFrame{
 		
 		this.setTitle("Java Theory");
 		
+		
+		/*
+		 * PANELS
+		 */
+		
+		JPanel thePanel = new JPanel();
+		JLabel label1 = new JLabel("New label");
+		
+		thePanel.add(label1);
+		this.add(thePanel);
+		
+		//rename the label
+		label1.setText("New label Text");
+		label1.setToolTipText("I give tips");
+		
+		JButton button =  new JButton("Send!");
+		
+		//remove border
+		//button.setBorderPainted(false); 
+		//remove background
+		//button.setContentAreaFilled(false); 
+		thePanel.add(button);
+		
+		//Text box with defined size
+		JTextField textField = new JTextField("placeholder here", 15);
+		//change the size
+		textField.setColumns(10);
+		
+		thePanel.add(textField);
+		
+		JTextArea area = new JTextArea(15, 20);
+		area.setText("new text area");
+		area.setLineWrap(true);
+		
+		//wrapt the words
+		area.setWrapStyleWord(true);
+		
+		JScrollPane scrollbar1 = new JScrollPane(area, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		thePanel.add(scrollbar1);
+		
+		
+
+		
 		this.setVisible(true);
+		
+		//focus and other interaction after the window is visible!
+		textField.requestFocus();
 	}
 	
 }

@@ -2,11 +2,18 @@ package theory.Swing;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
+
+import java.awt.events.*;
 
 
 public class GraphicalInterface extends JFrame{
 
+	int btnClick; 
+	
 	public static void main(String[] args) {
 		new GraphicalInterface(); 
 	}
@@ -84,6 +91,23 @@ public class GraphicalInterface extends JFrame{
 		
 		//focus and other interaction after the window is visible!
 		textField.requestFocus();
+		
+		//add the listener for a button
+		ListenForButton buttonListener = new ListenForButton();
+		button.addActionListener(buttonListener);
+		
+		
+	}
+	
+	private class ListenForButton implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		
+		
 	}
 	
 }

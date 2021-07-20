@@ -9,6 +9,7 @@ general notes of interest and experimentation with general knowledge
 + Threading basics
 + Threading with concurrency
 + Regex
++ Graphical User Interface frames and panels basics
 
 
 <hr>

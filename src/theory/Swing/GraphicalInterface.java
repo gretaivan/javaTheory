@@ -13,7 +13,7 @@ public class GraphicalInterface extends JFrame{
 
 	public GraphicalInterface() {
 		this.setSize(400, 400);
-		this.setVisible(true);
+	
 		
 		//change the location on the screen e.g. center
 		this.setLocationRelativeTo(null);
@@ -31,6 +31,13 @@ public class GraphicalInterface extends JFrame{
 		
 		//dont allow resizing
 		this.setResizable(false);
+		
+		//enable user to close the app on x click
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+		
+		this.setTitle("Java Theory");
+		
+		this.setVisible(true);
 	}
 	
 }

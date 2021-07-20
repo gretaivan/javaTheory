@@ -10,6 +10,7 @@ general notes of interest and experimentation with general knowledge
 + Threading with concurrency
 + Regex
 + Graphical User Interface frames and panels basics
++ File object
 
 
 <hr>

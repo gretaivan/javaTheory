@@ -1,6 +1,9 @@
 # Java Theory
 general notes of interest and experimentation with general knowledge 
-## Contents
+
+## Contents 
+> topics that are in JAVA SE11 Exam are in italics
+
 + Java Exceptions 
 + Arrays 
 + Lists
@@ -11,17 +14,18 @@ general notes of interest and experimentation with general knowledge
 + Regex
 + Graphical User Interface frames and panels basics
 + File object
++ <em>String Builder</em>
 
 
+### Checklist for  JAVA SE11 Exam 1ZO-819
+- [ ] String Builder
 
 <hr>
 
 #### For additional examples see game that was moved out to the separate repository as required dependencies to be setup, for that maven had to be used,  see [Monster Game repo](https://github.com/gretaivan/MonsterGameJava/blob/main/README.md), and [Calculator Engine](https://github.com/gretaivan/CalculatorEngine_Java/edit/main/README.md)
 
 
-## JAVA SE11 Exam Checklist
 
-- [ ] String Builder
 
 ## TODO
 - [ ]  Sort algorithms

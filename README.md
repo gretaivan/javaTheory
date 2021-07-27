@@ -17,15 +17,19 @@ general notes of interest and experimentation with general knowledge
 + String - string are immutable. Thus, everytime any change is made it creates a new String instance. 
 + <em>String Builder</em> - note it is not a string, it is a buffer, once the desired content is achieved, it requires extraction to be a string
 + Type casting - explicit casting is converting to the lower value primitive variable, which results in the data loss, so is not automatic. Implicit is when conversion is from lower data type to higher and there is no data loss. 
-+  [Data Types](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)
++  [Data Structures](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)  - <em> unchecked structures are not implemented yet</em>
 
 ### Checklist for  JAVA SE11 Exam 1ZO-819
 - [ ] String Builder
 
 <hr>
 
-## <a src="#1">Data Types</a>
-### Linear
+## <a src="#1">Data Structures</a>
+### Linear data structures
+- [ ] Linked List
+- [ ] Doubly Linked List
+- [ ] Queues
+- [ ] Stacks
 
 <hr>
 

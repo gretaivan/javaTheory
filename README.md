@@ -14,7 +14,8 @@ general notes of interest and experimentation with general knowledge
 + Regex
 + Graphical User Interface frames and panels basics
 + File object
-+ <em>String Builder</em>
++ String - string are immutable. Thus, everytime any change is made it creates a new String instance. 
++ <em>String Builder</em> - note it is not a string, it is a buffer, once the desired content is achieved, it requires extraction to be a string
 
 
 ### Checklist for  JAVA SE11 Exam 1ZO-819

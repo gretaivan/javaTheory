@@ -16,6 +16,8 @@ general notes of interest and experimentation with general knowledge
 + File object
 + String - string are immutable. Thus, everytime any change is made it creates a new String instance. 
 + <em>String Builder</em> - note it is not a string, it is a buffer, once the desired content is achieved, it requires extraction to be a string
++ Type casting - explicit casting is converting to the lower value primitive variable, which results in the data loss, so is not automatic. Implicit is when conversion is from lower data type to higher and there is no data loss. 
++ 
 
 
 ### Checklist for  JAVA SE11 Exam 1ZO-819
@@ -31,7 +33,11 @@ general notes of interest and experimentation with general knowledge
 ## TODO
 - [ ]  Sort algorithms
 - [ ]  Search algorithms
-
+- [ ]  Dictionary - stores key value pairs. One data type is used for keys and another one for values. Every key is associated at most one value. Dictionaries are parent classes to: 
+  - [ ] Hashtable - similar to HashMap as stores key-value pairs in a hashable, but unlike HashMap it does not allow ```null```  neither in key or value. And each key is hashed to get a hash code.
+  - [ ] HashMap
+  - [ ] LinkedHashMap
+  - [ ] TreeMap
 <hr>
 
 #### Style Guides 

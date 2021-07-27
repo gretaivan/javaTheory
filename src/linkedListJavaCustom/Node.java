@@ -17,6 +17,12 @@ public class Node {
 	  public Node getNextNode() {
 	    return this.next;
 	  }
+	  
+	  //TODO: adding node
+	  
+	  //TODO: removing node
+	  //TODO: finding node
+	  //TODO: traversing
 
 	  public static void main(String[] args) {
 	    Node firstNode = new Node("I am the first Node!");

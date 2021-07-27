@@ -26,7 +26,7 @@ general notes of interest and experimentation with general knowledge
 
 ## <a src="#1">Data Structures</a>
 ### Linear data structures
-- [ ] Linked List
+- [ ] Linked List - [see implementation](https://github.com/gretaivan/javaTheory/blob/main/src/linkedListJavaCustom/Node.java)
 > covers methods: add, add at the head, remove, traverse, find
 - [ ] Doubly Linked List
 - [ ] Queues

@@ -17,9 +17,11 @@ general notes of interest and experimentation with general knowledge
 + String - string are immutable. Thus, everytime any change is made it creates a new String instance. 
 + <em>String Builder</em> - note it is not a string, it is a buffer, once the desired content is achieved, it requires extraction to be a string
 + Type casting - explicit casting is converting to the lower value primitive variable, which results in the data loss, so is not automatic. Implicit is when conversion is from lower data type to higher and there is no data loss. 
++ Variable amount of arguments - vaargs or ellipse in the methods
 +  [Data Structures](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)  - <em> unchecked structures are not implemented yet</em>
 
-### Checklist for  JAVA SE11 Exam 1ZO-819
+
+## Checklist for  JAVA SE11 Exam 1ZO-819
 
 
 ##### Working with Java data types

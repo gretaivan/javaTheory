@@ -20,7 +20,16 @@ general notes of interest and experimentation with general knowledge
 +  [Data Structures](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)  - <em> unchecked structures are not implemented yet</em>
 
 ### Checklist for  JAVA SE11 Exam 1ZO-819
-- [ ] String Builder
+
+
+##### Working with Java data types
+
+- [ ] primitives  
+- [ ] wrapper classes 
+  - [ ] String Builder
+- [ ] operators 
+- [ ] parentheses 
+- [ ] type promotion and casting
 
 <hr>
 

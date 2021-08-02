@@ -24,9 +24,9 @@ general notes of interest and experimentation with general knowledge
 
 ##### Working with Java data types
 
-- [ ] primitives  
+- [x] primitives  
 - [ ] wrapper classes 
-  - [ ] String Builder
+  - [x] String Builder
 - [ ] operators 
 - [ ] parentheses 
 - [ ] type promotion and casting

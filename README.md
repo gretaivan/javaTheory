@@ -70,8 +70,12 @@ general notes of interest and experimentation with general knowledge
 
 ##### Java I/O API
 - [ ] Read and write console and file data using I/O Streams
+- [ ] data streams like filtering and etc
 - [ ] Implement serialization and deserialization techniques on Java objects
+- [ ] Collections
 - [ ] Handle file system objects using java.nio.file API
+- [ ] Concurrency API
+- [ ] JDBC and JPA (Java persistance)
 
 ##### Secure Coding in Java SE Application
 - [ ] Develop code that mitigates security threats such as denial of service, code injection, input validation and ensure data integrity

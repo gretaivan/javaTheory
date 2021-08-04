@@ -21,7 +21,7 @@ general notes of interest and experimentation with general knowledge
 
 ### Projects
 +  [Data Structures](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)  - <em> unchecked structures are not implemented yet</em>
-+ HR app - in the ```objectOrientationExample``` package - allows employee and deparment object creation. Allows to assign employee to the departments whilst making sure that capacity of is not exceeded. Features employee and department classes that uses the basic Java principles such as encapsulation, inheritance, constructor chaining, error handling 
++ HR app - in the ```objectOrientationExample``` package - allows employee and deparment object creation. Allows to assign employee to the departments whilst making sure that capacity of is not exceeded. Features employee and department classes that uses the basic Java principles such as encapsulation, inheritance, constructor chaining, error handling, use of object storing in arrays; 
 
 ## Checklist for  JAVA SE11 Exam 1ZO-819
 

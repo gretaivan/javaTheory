@@ -37,12 +37,12 @@ general notes of interest and experimentation with general knowledge
 - [x] Create and use loops, if/else, and switch statements
 
 ##### Java Object-Oriented Approach
-- [ ] Declare and instantiate Java objects including nested class objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)
+- [x] Declare and instantiate Java objects including nested class objects, and explain objects' lifecycles (including creation, dereferencing by reassignment, and garbage collection)
 - [x] Define and use fields and methods, including instance, static and overloaded methods
 - [x] Initialize objects and their members using instance and static initialiser statements and constructors
-- [ ] Understand variable scopes, apply encapsulation and make objects immutable
-- [ ] create and use subclasses and superclasses, including abstract classes
-- [ ] Utilize polymorphism and casting to call methods, differentiate object type versus reference type
+- [x] Understand variable scopes, apply encapsulation and make objects immutable
+- [x] create and use subclasses and superclasses, including abstract classes
+- [x] Utilize polymorphism and casting to call methods, differentiate object type versus reference type
 - [ ] Create and use interfaces, identify functional interfaces, and utilize private, static, and default methods
 - [ ] Create and use enumerations
 

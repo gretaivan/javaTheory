@@ -18,8 +18,10 @@ general notes of interest and experimentation with general knowledge
 + <em>String Builder</em> - note it is not a string, it is a buffer, once the desired content is achieved, it requires extraction to be a string
 + Type casting - explicit casting is converting to the lower value primitive variable, which results in the data loss, so is not automatic. Implicit is when conversion is from lower data type to higher and there is no data loss. 
 + Variable amount of arguments - vaargs or ellipse in the methods
-+  [Data Structures](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)  - <em> unchecked structures are not implemented yet</em>
 
+### Projects
++  [Data Structures](https://github.com/gretaivan/javaTheory/blob/main/README.md#data-types)  - <em> unchecked structures are not implemented yet</em>
++ HR app - in the ```objectOrientationExample``` package - allows employee and deparment object creation. Allows to assign employee to the departments whilst making sure that capacity of is not exceeded. Features employee and department classes that uses the basic Java principles such as encapsulation, inheritance, constructor chaining, error handling 
 
 ## Checklist for  JAVA SE11 Exam 1ZO-819
 

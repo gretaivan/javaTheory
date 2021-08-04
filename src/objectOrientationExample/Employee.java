@@ -60,6 +60,12 @@ public class Employee {
 	public Department getDepartment() {
 		return this.department; 
 	}
+	
+	@Override
+	public String toString() {
+		String message = String.format("Employee %s, belongs to %s department", this.name, this.department);
+		return message;
+	}
   
   
 }

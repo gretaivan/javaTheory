@@ -3,7 +3,7 @@ package objectOrientationExample;
 import java.util.ArrayList;
 
 public class Department {
-	private Enum type; 
+//	private Enum type; 
 	private String name; 
 	public ArrayList <Employee> employees; 
 	int number; 

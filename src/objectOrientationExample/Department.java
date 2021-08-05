@@ -5,7 +5,7 @@ public class Department {
 //	private Enum type; 
 	private String name; 
 	public Employee[] employees; 
-	private int count = 0; 
+	private static int count = 0; 
 	int number; 
 	
 	//perhaps a static array of department names to track the uniqueness
@@ -26,9 +26,9 @@ public class Department {
 	}
 
 	public void addEmployee(Employee e) {
-		if(count < 10 ) {
+		if(count < employees.length ) {
 			employees[count] = e; 
-			this.count++; 
+			count++; 
 			e.setDepartment(this);
 			System.out.println("Employee has been successfully added to the " + this.name + " department.");
 		} else { 
@@ -38,7 +38,7 @@ public class Department {
 	
 	
 	public Employee[] getEmployees() {
-		Employee[] existing = new Employee[this.count]; 
+		Employee[] existing = new Employee[count]; 
 		int i = 0; 
 		
 		while(employees[i]!= null && i < count) {

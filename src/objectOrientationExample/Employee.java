@@ -6,21 +6,33 @@ public class Employee {
 	private String name;
 	private Department department; 
 	private double salary;
+	private static int count = 0;
 	
 	
 	//featuring the constructor chaining
 	
 	public Employee(String name) {
-		this.id++;
+		this.id += count;
 		this.name = name;
 		this.department  = null; 
-		this.salary = 1000.00; 
+		this.salary = 24000.00; 
 		this.name = name; 
+		count++;
 	}
 	
 	public Employee(String name, Department dep) {
 		this(name);
 		this.department  = dep; 
+	}
+	
+	public Employee(String name, double salary) {
+		this(name);
+		this.salary  = salary; 
+	}
+	
+	public Employee(String name, Department dep, double salary) {
+		this(name, dep);
+		this.salary = salary;
 	}
 	
 	
@@ -63,9 +75,9 @@ public class Employee {
 		String message;
 		
 		if(department != null) {
-			message = String.format("Employee %s, is assigned to %s  department", getName(), department.getName());
+			message = String.format("Employee %s, is assigned to a %s department", getName(), department.getName());
 		} else {
-			message = String.format("Employee %s, is not assigned to any department", getName());
+			message = String.format("Employee: %-8d %-10s £%.2f", getId(),getName(), getSalary());
 		}
 		
 		return message;

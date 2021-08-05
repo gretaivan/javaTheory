@@ -36,7 +36,6 @@ public class Department {
 		}
 	}
 	
-	
 	public Employee[] getEmployees() {
 		Employee[] existing = new Employee[count]; 
 		int i = 0; 
@@ -44,20 +43,29 @@ public class Department {
 		while(employees[i]!= null && i < count) {
 			existing[i] = employees[i];
 			i++;
-			
-//			System.out.println(existing[i-1].getName() + i + existing.length);
 		}
-		
-//		System.out.println("returns array of " + existing.length);
 		return existing;
 		
 	}
 	
+	public int getEmployeeCount() {
+		return count;
+	}
+	
+	public Employee getEmployeeById(int id) {
+		for(Employee e : employees) {
+			if(e.getId() == id) {
+				return e;
+			}
+		}
+		return null;
+	}
 	public Department find(){
 		
 		return this; 
 	}
 
+	
 	@Override
 	public void DepartmentFinder() {
 		// TODO Auto-generated method stub

@@ -75,9 +75,9 @@ public class Employee {
 		String message;
 		
 		if(department != null) {
-			message = String.format("Employee %s, is assigned to a %s department", getName(), department.getName());
+			message = String.format("Employee: %-6d %-10s £%.2f | %s department", getId(),getName(), getSalary(), department.getName());
 		} else {
-			message = String.format("Employee: %-8d %-10s £%.2f", getId(),getName(), getSalary());
+			message = String.format("Employee: %-6d %-10s £%.2f", getId(),getName(), getSalary());
 		}
 		
 		return message;

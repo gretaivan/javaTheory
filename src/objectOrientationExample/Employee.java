@@ -10,7 +10,6 @@ public class Employee {
 	
 	
 	//featuring the constructor chaining
-	
 	public Employee(String name) {
 		this.id += count;
 		this.name = name;

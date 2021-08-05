@@ -60,15 +60,28 @@ public class Department {
 		}
 		return null;
 	}
-	public Department find(){
+	
+	public double getDepTotal () {
+		double total = 0.0; 
 		
-		return this; 
+		for(int i = 0; i < count; i++) {
+			total += employees[i].getSalary();
+		}
+		return total;
 	}
-
+	
+	public double getDepAveragePerEmp () {
+		double total = 0.0; 
+		
+		for(int i = 0; i < count; i++) {
+			total += employees[i].getSalary();
+		}
+		
+		return total/count;
+	}
 	
 	@Override
-	public void DepartmentFinder() {
-		// TODO Auto-generated method stub
-		
+	public String toString() {
+		return this.getName() + " department"; 
 	}
 }

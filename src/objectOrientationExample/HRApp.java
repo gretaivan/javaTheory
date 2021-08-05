@@ -38,6 +38,9 @@ public class HRApp {
 			System.out.println(emp.toString());
 		}
 	
+		
+		System.out.println("Total " + fin.getName() + " annual spending is : " + fin.getDepTotal());
+		System.out.println("Average employee salary in " + fin.getName() + " is : " + fin.getDepAveragePerEmp());
 		System.out.println("\ncompleted");
 	}
 

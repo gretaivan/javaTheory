@@ -9,15 +9,12 @@ public class Employee {
 	
 	
 	//featuring the constructor chaining
-	public Employee() {
-		this.id++;
-		this.name = null;
-		this.department  = null; 
-		this.salary = 1000.00; 
-	}
 	
 	public Employee(String name) {
-		this();
+		this.id++;
+		this.name = name;
+		this.department  = null; 
+		this.salary = 1000.00; 
 		this.name = name; 
 	}
 	
@@ -66,9 +63,9 @@ public class Employee {
 		String message;
 		
 		if(department != null) {
-			message = String.format("Employee %s, is assigned to %s  department", this.name, department.getName());
+			message = String.format("Employee %s, is assigned to %s  department", getName(), department.getName());
 		} else {
-			message = String.format("Employee %s is not assigned to any department", this.name);
+			message = String.format("Employee %s, is not assigned to any department", getName());
 		}
 		
 		return message;

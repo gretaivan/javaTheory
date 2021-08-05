@@ -5,7 +5,7 @@ public class Department {
 //	private Enum type; 
 	private String name; 
 	public Employee[] employees; 
-	public int count = 0; 
+	private int count = 0; 
 	int number; 
 	
 	//perhaps a static array of department names to track the uniqueness
@@ -28,16 +28,29 @@ public class Department {
 	public void addEmployee(Employee e) {
 		if(count < 10 ) {
 			employees[count] = e; 
-			count++; 
+			this.count++; 
 			e.setDepartment(this);
-			System.out.println("Employee has been successfully added to the " + this.name + "department.");
+			System.out.println("Employee has been successfully added to the " + this.name + " department.");
 		} else { 
 			System.out.println("This department has reached a full capacity of employees. No more can be added, please try another department...");
 		}
 	}
 	
+	
 	public Employee[] getEmployees() {
-		return this.employees;
+		Employee[] existing = new Employee[this.count]; 
+		int i = 0; 
+		
+		while(employees[i]!= null && i < count) {
+			existing[i] = employees[i];
+			i++;
+			
+//			System.out.println(existing[i-1].getName() + i + existing.length);
+		}
+		
+//		System.out.println("returns array of " + existing.length);
+		return existing;
+		
 	}
 	
 	public Department find(){

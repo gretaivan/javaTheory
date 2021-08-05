@@ -1,23 +1,42 @@
 package objectOrientationExample;
 
-import java.util.ArrayList;
 
 public class Department {
 //	private Enum type; 
 	private String name; 
-	public ArrayList <Employee> employees; 
+	public Employee[] employees; 
+	public int count = 0; 
 	int number; 
+	
+	//perhaps a static array of department names to track the uniqueness
 	
 	public Department(String name) {
 		this.name = name; 
-		employees = new ArrayList<Employee>();
+		employees = new Employee[10]; 
 	}
 	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public void addEmployee(Employee e) {
-		employees.add(e);
+		if(count < 10 ) {
+			employees[count] = e; 
+			count++; 
+			e.setDepartment(this);
+			System.out.println("Employee has been successfully added to the " + this.name + "department.");
+		} else { 
+			System.out.println("This department has reached a full capacity of employees. No more can be added, please try another department...");
+		}
 	}
 	
-	public ArrayList getEmployees() {
+	public Employee[] getEmployees() {
 		return this.employees;
 	}
 	

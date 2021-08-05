@@ -63,7 +63,14 @@ public class Employee {
 	
 	@Override
 	public String toString() {
-		String message = String.format("Employee %s, belongs to %s department", this.name, this.department);
+		String message;
+		
+		if(department != null) {
+			message = String.format("Employee %s, is assigned to %s  department", this.name, department.getName());
+		} else {
+			message = String.format("Employee %s is not assigned to any department", this.name);
+		}
+		
 		return message;
 	}
   

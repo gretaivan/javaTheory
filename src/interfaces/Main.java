@@ -5,7 +5,9 @@ import java.util.Iterator;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { anonymousClass(); }
+	
+	private static void anonymousClass() {
 		
 		Flight f175 = new Flight(175);
 		
@@ -39,10 +41,6 @@ public class Main {
         System.out.println(" ** Passenger order using the anonymous class' Iterable implementation **");
         for(Passenger p : f175.getOrderedPassengers())
             System.out.println(p.getName());
-
-    
-	
-		
 		
 	}
 

@@ -6,6 +6,9 @@ import java.util.Iterator;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		Flight f175 = new Flight(175);
+		
 		Passenger[] passengers = {
 				new Passenger("Luisa", 1, 180),
 				new Passenger("Jack", 1, 90),

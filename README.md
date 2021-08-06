@@ -46,7 +46,7 @@ general notes of interest and experimentation with general knowledge
 - [x] create and use subclasses and superclasses, including abstract classes
 - [x] Utilize polymorphism and casting to call methods, differentiate object type versus reference type
 - [ ] Create and use interfaces, identify functional interfaces, and utilize private, static, and default methods
-- [ ] Create and use enumerations
+- [x] Create and use enumerations
 
 ##### Exception Handling
 - [ ] Handle exceptions using try/catch/finally clauses, try-with-resource, and multi-catch statements

@@ -56,6 +56,7 @@ general notes of interest and experimentation with general knowledge
 - [ ] Create and use custom exceptions
 
 ##### Working with Arrays and Collections
+- [x] ArrayList
 - [ ] Use generics, including wildcards
 - [ ] Use a Java array and List, Set, Map and Deque collections, including convenience methods
 - [ ] Sort collections and arrays using Comparator and Comparable interfaces
